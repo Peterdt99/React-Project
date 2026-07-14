@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.agents/
+.git-empty-backup/
+.chrome-profile*/
+vite-dev.log
+vite-dev.err
+*.png
