@@ -33,6 +33,18 @@ class EmployeeForm extends Component {
     event.preventDefault();
 
     const employeeName = `${this.state.firstName} ${this.state.lastName}`.trim();
+    const employee = {
+      firstName: this.state.firstName,
+      lastName: this.state.lastName,
+      email: this.state.email,
+      phone: this.state.phone,
+      department: this.state.department,
+      position: this.state.position,
+      employmentType: this.state.employmentType,
+      startDate: this.state.startDate
+    };
+
+    this.props.addEmployee(employee);
 
     this.setState({
       ...emptyEmployee,
